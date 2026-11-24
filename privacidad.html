@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidad de La Biblia en mi día a día</title>
+<meta name="description" content="Qué hace esta app con tus datos: nada sale de tu teléfono, y acá se explica por qué.">
+<style>
+  :root {
+    --bg:#140f11; --superficie:#1f1719; --texto:#f4ece9;
+    --apagado:#9b8e8a; --borde:#312527; --acento:#d08a6e;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-tema="noche"]) {
+      --bg:#faf5f2; --superficie:#fff; --texto:#1f1719;
+      --apagado:#6d615d; --borde:#e6dcd6; --acento:#8d3a28;
+      color-scheme: light;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; background:var(--bg); color:var(--texto);
+    font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    padding:2.5rem 1rem 4rem;
+  }
+  main { max-width:38rem; margin:0 auto; }
+  h1 { font-size:1.7rem; line-height:1.2; margin:0 0 .3rem; }
+  h2 { font-size:1.1rem; margin:2.3rem 0 .6rem; }
+  .marca { color:var(--acento); font-weight:700; letter-spacing:.02em; }
+  .entradilla { color:var(--apagado); margin:0 0 .4rem; }
+  .fecha { color:var(--apagado); font-size:.85rem; margin:0 0 2rem; }
+  ul { padding-left:1.2rem; }
+  li { margin:.35rem 0; }
+  table { width:100%; border-collapse:collapse; margin:.6rem 0; font-size:.94rem; }
+  th,td { text-align:left; padding:.6rem .5rem; border-bottom:1px solid var(--borde); vertical-align:top; }
+  th { color:var(--apagado); font-weight:600; font-size:.8rem; text-transform:uppercase; letter-spacing:.04em; }
+  .caja { background:var(--superficie); border:1px solid var(--borde); border-radius:12px; padding:1rem 1.1rem; margin:1.3rem 0; }
+  .caja p:first-child { margin-top:0; } .caja p:last-child { margin-bottom:0; }
+  a { color:var(--acento); }
+  footer { margin-top:3rem; color:var(--apagado); font-size:.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <p class="marca">La Biblia en mi día a día</p>
+  <h1>Privacidad</h1>
+  <p class="entradilla">
+    Esto está escrito para entenderse, no para cubrirse las espaldas.
+  </p>
+  <p class="fecha">Última actualización: 24 de noviembre de 2026 ·
+    <a href="privacy.html">In English</a></p>
+
+  <div class="caja">
+    <p><strong>Lo más importante, primero: esta app no recoge nada.</strong></p>
+    <p>
+      No hay cuenta, no hay registro, no hay servidor nuestro. Lo que
+      subrayás, lo que anotás, dónde ibas leyendo y cómo la tenés
+      configurada se queda dentro del teléfono. Si desinstalás la app, eso
+      desaparece con ella.
+    </p>
+    <p>
+      <strong>No hay anuncios ni rastreadores.</strong> La app es un
+      obsequio: no se mide tu comportamiento, no se vende nada a nadie y no
+      hay nada que pagar nunca.
+    </p>
+  </div>
+
+  <h2>Sin cuenta, sin nombre</h2>
+  <p>
+    No te pedimos ni tu correo, ni tu nombre, ni tu teléfono. No sabemos
+    quién sos ni cuántas veces abriste la app, y no es una promesa: es que
+    no hay a dónde mandar eso. La app no le escribe a ningún servidor
+    nuestro, porque no tenemos ninguno.
+  </p>
+
+  <h2>El micrófono</h2>
+  <p>
+    La app se puede manejar hablando —«Mateo 5, 14 al 23»—, y eso necesita
+    el micrófono. Importa cómo funciona:
+  </p>
+  <ul>
+    <li>El micrófono <strong>no está siempre encendido</strong>. Se abre
+        cuando vos lo abrís, y se cierra solo.</li>
+    <li>Lo que decís se reconoce <strong>dentro del teléfono</strong>, con
+        un programa que vive en la app. No hace falta internet.</li>
+    <li>El audio <strong>no se guarda ni se manda a ningún lado</strong>.
+        Se convierte en una orden y se descarta.</li>
+  </ul>
+  <p>
+    Si nunca usás el control por voz, la app ni siquiera pide el permiso.
+  </p>
+
+  <h2>Cuándo usa internet</h2>
+  <p>
+    La Biblia completa en español, la voz que lee y el reconocimiento de voz
+    vienen <strong>dentro del instalador</strong>: la app funciona entera
+    sin conexión desde el primer momento.
+  </p>
+  <p>
+    Internet se usa solo si pedís algo opcional que no viene incluido por
+    peso —hoy, lo del idioma inglés—. Eso se baja de servidores de terceros:
+  </p>
+  <table>
+    <tr><th>De dónde</th><th>Qué baja</th></tr>
+    <tr><td>huggingface.co</td><td>Voces que leen en voz alta</td></tr>
+    <tr><td>github.com</td><td>Copia de respaldo de esas mismas voces</td></tr>
+    <tr><td>alphacephei.com</td><td>El reconocimiento de voz</td></tr>
+  </table>
+  <p>
+    Como en cualquier descarga, esos servidores ven la dirección de internet
+    (IP) desde la que pedís el archivo. No les mandamos nada tuyo, y nosotros
+    no nos enteramos de nada: la descarga va directo del servidor a tu
+    teléfono.
+  </p>
+
+  <h2>Cuando algo le sale mal a la app</h2>
+  <p>
+    La app anota los errores que le pasan, <strong>y los deja guardados en
+    tu teléfono</strong>. No se mandan a ningún lado. Están ahí para que, si
+    pedís ayuda, puedas enseñarlos vos; y los podés borrar cuando quieras.
+  </p>
+
+  <h2>Google Play</h2>
+  <p>
+    Si bajaste la app de Google Play, Google recoge sus propias cosas —como
+    informes de fallos— según
+    <a href="https://policies.google.com/privacy">su política de
+    privacidad</a>. Eso pasa con todas las apps de la tienda y no está en
+    nuestras manos. Nosotros no recibimos nada de eso con tu nombre.
+  </p>
+
+  <h2>Borrar todo</h2>
+  <p>
+    No hay cuenta que borrar. Para borrar lo que está guardado en el
+    teléfono tenés dos formas, y las dos las controlás vos:
+  </p>
+  <ul>
+    <li>Dentro de la app, en <strong>Ajustes</strong>, cada cosa se puede
+        borrar por separado.</li>
+    <li>Desinstalar la app, que lo borra todo de una vez.</li>
+  </ul>
+
+  <h2>Los textos bíblicos</h2>
+  <p>
+    Las versiones que trae son de dominio público o de licencia libre, y van
+    citadas en la app. No se usó ninguna traducción con derechos vigentes:
+    que algo sea gratis no quita los derechos de autor de nadie.
+  </p>
+
+  <h2>Niños</h2>
+  <p>
+    La app es apta para cualquier edad y no recoge datos de nadie, menores
+    incluidos.
+  </p>
+
+  <h2>Cambios</h2>
+  <p>
+    Si esto cambia, cambia la fecha de arriba. Si el cambio es grande, se
+    avisa dentro de la app.
+  </p>
+
+  <footer>
+    La Biblia en mi día a día · com.dancen.bibliadiaadia<br>
+    Responsable: Daniel Centeno ·
+    <a href="mailto:dancen001@gmail.com">dancen001@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
